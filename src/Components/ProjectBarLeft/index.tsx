@@ -7,7 +7,7 @@ interface iProps {
   children?: ReactNode;
 }
 
-export default function NavbarLeft(props: iProps) {
+export default function ProjectBarLeft(props: iProps) {
 
   return (
     <div className="NavbarLeft">
@@ -15,20 +15,17 @@ export default function NavbarLeft(props: iProps) {
         variant="permanent"
         anchor="left"
       >
-        <h3>VNTS</h3>
+        <h3>Project name here</h3>
 
         <List
           className="drawer"
         >
-          <ListItem button component="a" href="/project/new">
-            <ListItemText primary="New" />
+          <ListItem button component="a" href="/meta">
+            <ListItemText primary="Meta" />
           </ListItem>
-          <ListItem button component="a" href="/project/load">
-            <ListItemText primary="Load" />
+          <ListItem button component="a" href="/scenes">
+            <ListItemText primary="Scenes" />
           </ListItem>
-          {/* <ListItem button alignItems="center">
-            <ListItemText primary="Exit" /> //TODO: if the project is running in a browser hide this
-          </ListItem> */}
         </List>
       </Drawer>
     </div>

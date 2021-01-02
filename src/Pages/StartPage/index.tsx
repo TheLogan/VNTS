@@ -1,14 +1,11 @@
 import { Grid, Paper } from "@material-ui/core";
-import NavbarLeft from "../../Components/Drawer/";
 import React from "react";
 import { RouteComponentProps } from "react-router-dom";
 
-export const MainPage:React.FunctionComponent<RouteComponentProps> = () => {
+export const StartPage:React.FunctionComponent<RouteComponentProps> = () => {
   return (
     <div>
-      <NavbarLeft
-      // Exit={() => {}} //TODO: if the project is running in a browser hide this
-      />
+      
       <Paper style={{ height: "100vh" }}>
         <Grid
           container

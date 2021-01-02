@@ -1,7 +1,7 @@
 import { Button, Checkbox, FormControl, FormControlLabel, FormGroup, Grid, Input, InputLabel, Paper } from "@material-ui/core";
 import React from "react";
 import { RouteComponentProps } from "react-router-dom";
-import { useActions, useState, useOvermind } from "../../overmind";
+import { useActions, useState } from "../../overmind";
 import './style.scss';
 
 export const NewProject:React.FC<RouteComponentProps> = (props) => {
@@ -15,6 +15,7 @@ export const NewProject:React.FC<RouteComponentProps> = (props) => {
     if(isCreatingProject && project) {
       props.history.push('/some/path')
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[isCreatingProject])
 
   return (

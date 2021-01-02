@@ -1,9 +1,8 @@
 import React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
-export const EditMeta:React.FunctionComponent<RouteComponentProps> = () => {
+export const ProjectMain:React.FunctionComponent<RouteComponentProps> = () => {
   return (
-    <>
-    </>
+    <></>
   )
 }

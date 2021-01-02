@@ -1,4 +1,4 @@
-export {LoadProject} from './LoadProject'
-export {MainPage} from './Main'
-export {NewProject} from './NewProject'
-export {EditMeta} from './EditMeta'
+export { LoadProject } from './LoadProject'
+export { StartPage } from './StartPage'
+export { NewProject } from './NewProject'
+export { ProjectMain } from './ProjectMain'
