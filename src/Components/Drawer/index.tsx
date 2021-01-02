@@ -20,10 +20,10 @@ export default function NavbarLeft(props: iProps) {
         <List
           className="drawer"
         >
-          <ListItem button component="a" href="/project/new">
+          <ListItem button component="a" href="/new">
             <ListItemText primary="New" />
           </ListItem>
-          <ListItem button component="a" href="/project/load">
+          <ListItem button component="a" href="/load">
             <ListItemText primary="Load" />
           </ListItem>
           {/* <ListItem button alignItems="center">
