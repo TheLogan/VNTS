@@ -2,6 +2,7 @@ import { IConfig } from "overmind";
 import { createActionsHook, createEffectsHook, createHook, createReactionHook, createStateHook } from "overmind-react";
 import Project from "../Models/Project";
 import * as actions from './actions';
+import * as effects from './effects';
 
 interface iState {
   project: null | Project;
@@ -22,13 +23,13 @@ export const useReaction = createReactionHook<typeof config>()
 export const config = {
   state,
   actions,
-  //effects
+  effects
 }
 
 declare module 'overmind' {
   interface Config extends IConfig<{
     state: typeof config.state,
     actions: typeof config.actions,
-    // effects: typeof config.effects
+    effects: typeof config.effects
   }> { }
 }

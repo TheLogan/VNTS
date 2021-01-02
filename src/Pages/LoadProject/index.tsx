@@ -1,6 +1,7 @@
 import React from "react";
+import { RouteComponentProps } from "react-router-dom";
 
-export default function LoadProject() {
+export const LoadProject:React.FC<RouteComponentProps> = (props) => {
   return (
     <>
     </>

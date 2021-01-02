@@ -1,8 +1,9 @@
 import { Grid, Paper } from "@material-ui/core";
 import NavbarLeft from "../../Components/Drawer/";
 import React from "react";
+import { RouteComponentProps } from "react-router-dom";
 
-export default function MainPage() {
+export const MainPage:React.FunctionComponent<RouteComponentProps> = () => {
   return (
     <div>
       <NavbarLeft
